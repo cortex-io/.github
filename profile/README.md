@@ -1,10 +1,6 @@
 <div align="center">
 
-# Cortex
-
-**An AI-powered autonomous DevOps platform built on K3s.**
-
-Cortex was a multi-agent system for autonomous infrastructure management — master-worker agents, neural routing, self-healing daemons, and a full observability pipeline.
+<img src="https://raw.githubusercontent.com/cortex-io/.github/main/profile/banner.svg" width="100%">
 
 ---
 
@@ -29,22 +25,9 @@ Cortex was a multi-agent system for autonomous infrastructure management — mas
 
 ## Architecture
 
-```
-                    ┌─────────────────────────────────────────┐
-                    │           Cortex Prime (Meta)           │
-                    └──────────────────┬──────────────────────┘
-                                       │
-                    ┌──────────────────┴──────────────────────┐
-                    │              COO Orchestrator            │
-                    └──┬─────┬─────┬──────┬──────┬───────────┘
-                       │     │     │      │      │
-                ┌──────┴┐ ┌──┴──┐ ┌┴────┐ ┌┴───┐ ┌┴────┐
-                │Coord. │ │Dev  │ │Sec  │ │Inv │ │CI/CD│
-                │Master │ │Master│ │Master│ │Master│ │Master│
-                └───┬───┘ └──┬──┘ └──┬──┘ └──┬──┘ └──┬──┘
-                    │        │       │       │       │
-               Workers   Workers  Workers  Workers  Workers
-```
+<div align="center">
+<img src="https://raw.githubusercontent.com/cortex-io/.github/main/profile/architecture.svg" width="800">
+</div>
 
 <div align="center">
 <sub>Built with Claude, deployed on K3s, managed by ArgoCD.</sub>
