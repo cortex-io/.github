@@ -1,86 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="900" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Cortex</title>
+  <desc id="d">Cortex: multi-agent AI infrastructure orchestration. The brain, the muscle, and the deployment. Archived; the network is asleep.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="textGlow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
+    <radialGradient id="core" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#9ecbff"/><stop offset=".6" stop-color="#58a6ff"/><stop offset="1" stop-color="#7d5be0"/></radialGradient>
+    <radialGradient id="glow" cx="78%" cy="50%" r="50%"><stop offset="0" stop-color="#58a6ff" stop-opacity=".12"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="title" x1="0" x2="1"><stop offset="0" stop-color="#9ecbff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
+    <path id="sig" d="M637 56 L683 88 L717 37 L754 39 L783 85 L750 103 L728 108"/>
   </defs>
-
-  <!-- Background -->
-  <rect width="900" height="180" fill="url(#bg)"/>
-
-  <!-- Grid lines -->
-  <g stroke="#21262d" stroke-width="0.5" opacity="0.5">
-    <line x1="0" y1="30" x2="900" y2="30"/>
-    <line x1="0" y1="60" x2="900" y2="60"/>
-    <line x1="0" y1="90" x2="900" y2="90"/>
-    <line x1="0" y1="120" x2="900" y2="120"/>
-    <line x1="0" y1="150" x2="900" y2="150"/>
-    <line x1="100" y1="0" x2="100" y2="180"/>
-    <line x1="200" y1="0" x2="200" y2="180"/>
-    <line x1="300" y1="0" x2="300" y2="180"/>
-    <line x1="400" y1="0" x2="400" y2="180"/>
-    <line x1="500" y1="0" x2="500" y2="180"/>
-    <line x1="600" y1="0" x2="600" y2="180"/>
-    <line x1="700" y1="0" x2="700" y2="180"/>
-    <line x1="800" y1="0" x2="800" y2="180"/>
+  <style>
+    .sans{font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .n{fill:#58a6ff;animation:breathe 6s ease-in-out infinite}
+    @keyframes breathe{0%,100%{opacity:.15}50%{opacity:.75}}
+    .core{animation:core 6s ease-in-out infinite}
+    @keyframes core{0%,100%{opacity:.55}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.pkt{display:none}}
+  </style>
+  <rect x="1" y="1" width="898" height="258" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <rect x="1" y="1" width="898" height="258" rx="16" fill="url(#glow)"/>
+  <g stroke="#30363d" stroke-width="1"><line x1="637" y1="56" x2="572" y2="49"/><line x1="637" y1="56" x2="683" y2="88"/><line x1="754" y1="39" x2="717" y2="37"/><line x1="754" y1="39" x2="783" y2="85"/><line x1="713" y1="102" x2="728" y2="108"/><line x1="713" y1="102" x2="683" y2="88"/><line x1="541" y1="132" x2="533" y2="116"/><line x1="541" y1="132" x2="585" y2="147"/><line x1="533" y1="116" x2="541" y2="68"/><line x1="545" y1="43" x2="572" y2="49"/><line x1="545" y1="43" x2="541" y2="68"/><line x1="673" y1="199" x2="746" y2="225"/><line x1="673" y1="199" x2="631" y2="197"/><line x1="673" y1="199" x2="709" y2="210"/><line x1="565" y1="71" x2="572" y2="49"/><line x1="565" y1="71" x2="541" y2="68"/><line x1="746" y1="225" x2="806" y2="172"/><line x1="746" y1="225" x2="709" y2="210"/><line x1="728" y1="108" x2="750" y2="103"/><line x1="728" y1="108" x2="683" y2="88"/><line x1="871" y1="34" x2="829" y2="85"/><line x1="871" y1="34" x2="873" y2="49"/><line x1="829" y1="85" x2="783" y2="85"/><line x1="829" y1="85" x2="873" y2="49"/><line x1="631" y1="197" x2="633" y2="148"/><line x1="585" y1="147" x2="633" y2="148"/><line x1="585" y1="147" x2="608" y2="146"/><line x1="750" y1="103" x2="765" y2="115"/><line x1="750" y1="103" x2="783" y2="85"/><line x1="717" y1="37" x2="683" y2="88"/><line x1="765" y1="115" x2="806" y2="172"/><line x1="765" y1="115" x2="783" y2="85"/><line x1="633" y1="148" x2="608" y2="146"/></g>
+  <circle class="n" cx="637" cy="56" r="3" style="animation-delay:-1.0s"/><circle class="n" cx="754" cy="39" r="3" style="animation-delay:-0.9s"/><circle class="n" cx="713" cy="102" r="3" style="animation-delay:-2.5s"/><circle class="n" cx="541" cy="132" r="4" style="animation-delay:-0.5s"/><circle class="n" cx="533" cy="116" r="4" style="animation-delay:-3.4s"/><circle class="n" cx="545" cy="43" r="3" style="animation-delay:-2.0s"/><circle class="n" cx="673" cy="199" r="3" style="animation-delay:-3.6s"/><circle class="n" cx="565" cy="71" r="4" style="animation-delay:-4.8s"/><circle class="n" cx="746" cy="225" r="2.5" style="animation-delay:-5.0s"/><circle class="n" cx="728" cy="108" r="3" style="animation-delay:-2.8s"/><circle class="n" cx="871" cy="34" r="4" style="animation-delay:-0.4s"/><circle class="n" cx="829" cy="85" r="4" style="animation-delay:-4.2s"/><circle class="n" cx="572" cy="49" r="4" style="animation-delay:-3.5s"/><circle class="n" cx="631" cy="197" r="4" style="animation-delay:-4.9s"/><circle class="n" cx="585" cy="147" r="3" style="animation-delay:-4.3s"/><circle class="n" cx="750" cy="103" r="4" style="animation-delay:-2.1s"/><circle class="n" cx="717" cy="37" r="3" style="animation-delay:-2.1s"/><circle class="n" cx="541" cy="68" r="4" style="animation-delay:-0.7s"/><circle class="n" cx="765" cy="115" r="2.5" style="animation-delay:-1.3s"/><circle class="n" cx="633" cy="148" r="3" style="animation-delay:-0.8s"/><circle class="n" cx="683" cy="88" r="2.5" style="animation-delay:-2.4s"/><circle class="n" cx="806" cy="172" r="3" style="animation-delay:-0.5s"/><circle class="n" cx="608" cy="146" r="3" style="animation-delay:-2.4s"/><circle class="n" cx="709" cy="210" r="3" style="animation-delay:-5.3s"/><circle class="n" cx="783" cy="85" r="3" style="animation-delay:-5.2s"/><circle class="n" cx="873" cy="49" r="3" style="animation-delay:-4.2s"/>
+  <circle class="pkt" r="3" fill="#a371f7" opacity=".8"><animateMotion dur="14s" repeatCount="indefinite"><mpath href="#sig"/></animateMotion></circle>
+  <g transform="translate(40 62) scale(0.2656)">
+  <path d="M378.9 170.0A150 150 0 1 0 378.9 342.0" fill="none" stroke="url(#ring)" stroke-width="34" stroke-linecap="round"/>
+  <g stroke="#58a6ff" stroke-opacity=".55" stroke-width="8"><line x1="256" y1="256" x2="331.0" y2="126.1"/><line x1="256" y1="256" x2="181.0" y2="126.1"/><line x1="256" y1="256" x2="106.0" y2="256.0"/><line x1="256" y1="256" x2="181.0" y2="385.9"/><line x1="256" y1="256" x2="331.0" y2="385.9"/></g>
+  <circle class="m m0" cx="331.0" cy="126.1" r="27" fill="#0d1117" stroke="#e6edf3" stroke-width="9"/>
+  <circle class="m m1" cx="181.0" cy="126.1" r="27" fill="#0d1117" stroke="#e6edf3" stroke-width="9"/>
+  <circle class="m m2" cx="106.0" cy="256.0" r="27" fill="#0d1117" stroke="#e6edf3" stroke-width="9"/>
+  <circle class="m m3" cx="181.0" cy="385.9" r="27" fill="#0d1117" stroke="#e6edf3" stroke-width="9"/>
+  <circle class="m m4" cx="331.0" cy="385.9" r="27" fill="#0d1117" stroke="#e6edf3" stroke-width="9"/>
+  <circle class="core" cx="256" cy="256" r="46" fill="url(#core)"/>
   </g>
-
-  <!-- Animated pulse line -->
-  <line x1="0" y1="90" x2="900" y2="90" stroke="#58a6ff" stroke-width="1" opacity="0">
-    <animate attributeName="opacity" values="0;0.4;0" dur="4s" repeatCount="indefinite"/>
-  </line>
-  <rect x="-100" y="0" width="100" height="180" fill="none">
-    <animate attributeName="x" values="-100;900" dur="4s" repeatCount="indefinite"/>
-  </rect>
-  <line x1="0" y1="0" x2="0" y2="180" stroke="#58a6ff" stroke-width="2" opacity="0.15">
-    <animate attributeName="x1" values="-10;910" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="-10;910" dur="4s" repeatCount="indefinite"/>
-  </line>
-
-  <!-- Title -->
-  <text x="450" y="72" text-anchor="middle" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="48" font-weight="700" fill="#e6edf3" filter="url(#textGlow)">Cortex</text>
-
-  <!-- Tagline -->
-  <text x="450" y="105" text-anchor="middle" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="16" fill="#8b949e">Autonomous DevOps Platform</text>
-
-  <!-- ARCHIVED badge -->
-  <rect x="780" y="12" width="100" height="26" rx="6" fill="none" stroke="#f0883e" stroke-width="1.5"/>
-  <text x="830" y="30" text-anchor="middle" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="12" font-weight="600" fill="#f0883e">ARCHIVED</text>
-
-  <!-- Feature pills -->
-  <g transform="translate(450, 145)" text-anchor="middle">
-    <!-- Multi-Agent -->
-    <rect x="-285" y="-12" width="110" height="24" rx="12" fill="#238636" opacity="0.9"/>
-    <text x="-230" y="5" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="11" fill="#e6edf3" text-anchor="middle">Multi-Agent</text>
-
-    <!-- K3s -->
-    <rect x="-155" y="-12" width="70" height="24" rx="12" fill="#1f6feb" opacity="0.9"/>
-    <text x="-120" y="5" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="11" fill="#e6edf3" text-anchor="middle">K3s</text>
-
-    <!-- ArgoCD -->
-    <rect x="-65" y="-12" width="90" height="24" rx="12" fill="#6e40c9" opacity="0.9"/>
-    <text x="-20" y="5" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="11" fill="#e6edf3" text-anchor="middle">ArgoCD</text>
-
-    <!-- Self-Healing -->
-    <rect x="45" y="-12" width="120" height="24" rx="12" fill="#b08800" opacity="0.9"/>
-    <text x="105" y="5" font-family="'SF Mono','Fira Code','Cascadia Code',monospace" font-size="11" fill="#e6edf3" text-anchor="middle">Self-Healing</text>
+  <text x="200" y="128" class="sans" font-size="64" font-weight="700" fill="url(#title)" letter-spacing="-1">Cortex</text>
+  <text x="202" y="162" class="sans" font-size="17" fill="#e6edf3">Multi-agent AI infrastructure orchestration.</text>
+  <text x="202" y="186" class="sans" font-size="17" fill="#8b949e">The brain, the muscle, and the deployment.</text>
+  <g transform="translate(436 70) rotate(-8)">
+    <rect x="0" y="0" width="118" height="30" rx="5" fill="none" stroke="#f0883e" stroke-width="2"/>
+    <text x="59" y="20" text-anchor="middle" class="mono" font-size="14" font-weight="700" fill="#f0883e" letter-spacing="2">ARCHIVED</text>
   </g>
-
-  <!-- Border -->
-  <rect x="0.5" y="0.5" width="899" height="179" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
+  <text x="202" y="222" class="mono" font-size="12" fill="#6e7681">status: asleep · 5 masters · 7 worker types · 9 daemons</text>
 </svg>

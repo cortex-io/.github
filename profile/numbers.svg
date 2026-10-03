@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 132" width="900" height="132" role="img" aria-labelledby="t d">
+  <title id="t">Cortex by the numbers</title>
+  <desc id="d">5 master agents; 7 worker types; 9 daemons; 94% worker success rate; 200k tokens / day budget.</desc>
+  <style>
+    .sans{font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+    .pop{animation:pop .8s ease-out both}
+    @keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <rect x="1" y="1" width="898" height="130" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <rect x="24.0" y="22" width="159.2" height="88" rx="12" fill="#161b22" stroke="#30363d"/><rect x="40.0" y="36" width="24" height="4" rx="2" fill="#58a6ff"/><text x="40.0" y="80" class="sans pop" style="animation-delay:0.00s" font-size="32" font-weight="700" fill="#e6edf3">5</text><text x="40.0" y="99" class="sans" font-size="12.5" fill="#8b949e">master agents</text><rect x="197.2" y="22" width="159.2" height="88" rx="12" fill="#161b22" stroke="#30363d"/><rect x="213.2" y="36" width="24" height="4" rx="2" fill="#3fb950"/><text x="213.2" y="80" class="sans pop" style="animation-delay:0.12s" font-size="32" font-weight="700" fill="#e6edf3">7</text><text x="213.2" y="99" class="sans" font-size="12.5" fill="#8b949e">worker types</text><rect x="370.4" y="22" width="159.2" height="88" rx="12" fill="#161b22" stroke="#30363d"/><rect x="386.4" y="36" width="24" height="4" rx="2" fill="#a371f7"/><text x="386.4" y="80" class="sans pop" style="animation-delay:0.24s" font-size="32" font-weight="700" fill="#e6edf3">9</text><text x="386.4" y="99" class="sans" font-size="12.5" fill="#8b949e">daemons</text><rect x="543.6" y="22" width="159.2" height="88" rx="12" fill="#161b22" stroke="#30363d"/><rect x="559.6" y="36" width="24" height="4" rx="2" fill="#2dd4bf"/><text x="559.6" y="80" class="sans pop" style="animation-delay:0.36s" font-size="32" font-weight="700" fill="#e6edf3">94%</text><text x="559.6" y="99" class="sans" font-size="12.5" fill="#8b949e">worker success rate</text><rect x="716.8" y="22" width="159.2" height="88" rx="12" fill="#161b22" stroke="#30363d"/><rect x="732.8" y="36" width="24" height="4" rx="2" fill="#f0883e"/><text x="732.8" y="80" class="sans pop" style="animation-delay:0.48s" font-size="32" font-weight="700" fill="#e6edf3">200k</text><text x="732.8" y="99" class="sans" font-size="12.5" fill="#8b949e">tokens / day budget</text>
+</svg>
